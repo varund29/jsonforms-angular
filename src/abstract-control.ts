@@ -32,7 +32,7 @@ import {
   OwnPropsOfControl,
   StatePropsOfControl
 } from '@jsonforms/core/src/index';
-import { Input, OnDestroy, OnInit } from '@angular/core';
+import { Injectable, Input, OnDestroy, OnInit } from '@angular/core';
 import {
   AbstractControl,
   FormControl,
@@ -44,7 +44,7 @@ import { Subscription } from 'rxjs';
 import { JsonFormsBaseRenderer } from './base.renderer';
 import { JsonFormsAngularService } from './jsonforms.service';
 import merge from 'lodash/merge';
-
+Injectable()
 export abstract class JsonFormsAbstractControl<
   Props extends StatePropsOfControl
 > extends JsonFormsBaseRenderer<ControlElement> implements OnInit, OnDestroy {
