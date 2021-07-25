@@ -22,7 +22,7 @@
   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
   THE SOFTWARE.
 */
-import { Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import {
   JsonSchema,
   OwnPropsOfRenderer,
