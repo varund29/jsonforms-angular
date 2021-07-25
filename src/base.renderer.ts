@@ -28,7 +28,9 @@ import {
   OwnPropsOfRenderer,
   UISchemaElement
 } from '@jsonforms/core/src/index';
-
+@Component({
+  template: ''
+})
 export class JsonFormsBaseRenderer<T extends UISchemaElement> {
   @Input() uischema: T;
   @Input() schema: JsonSchema;
